@@ -1,15 +1,6 @@
 .main-heading {
-            margin-top:-50px;
             width: 100%;
             top:0;
-            background: url("../img/main-heading.jpg");
-            background-size: cover;
-        @media (max-width:$md3+px) {
-            background-clip: content-box;
-            background-repeat: no-repeat;
-            background-position: center;
-
-        }
     &__btn {
         position: absolute;
         right: 30px;
@@ -30,17 +21,10 @@
     }
 
     &__content {
-        background: linear-gradient(90deg, rgba(0, 91, 193, 0.6), rgba(0, 91, 193, 0.6) 40%,  rgba(0, 0, 0, 0) 40%);
-        color: #fff;
+        color: $primary;
         height: 100%;
         display:flex;
         align-items: stretch;
-        @media (max-width: $md3+px) {
-            background: linear-gradient(90deg, rgba(0, 91, 193, 0.6), rgba(0, 91, 193, 0.6) 30%,  rgba(0, 0, 0, 0) 30%);
-        }
-        @media (max-width: $md4+px) {
-            background: linear-gradient(90deg, rgba(0, 91, 193, 0.6), rgba(0, 91, 193, 0.6) 60%,  rgba(0, 0, 0, 0) 60%);
-        }
     }
 
     &__block {
@@ -53,7 +37,7 @@
 
     &__title {
         line-height: 1.5;
-        color:#fff;
+        color: $primary;
         text-align: center;
         @include adaptive-value('font-size', 48, 38, 0);
         text-transform: none;

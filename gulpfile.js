@@ -131,6 +131,8 @@ function images(){
 
 function fonts(){
     src(path.src.fonts)
+    .pipe(dest(path.build.fonts));
+    src(path.src.fonts)
     .pipe(ttf2woff())
     .pipe(dest(path.build.fonts));
     src(path.src.fonts)

@@ -45,11 +45,11 @@
 
     &__link {
         font-size: 14px;
-        font-family: $SecondFontFamily;
-        font-weight: 600;
+        font-family: $fontFamily;
+        font-weight: 500;
         margin: 0;
         padding:20px;
-        color: rgba(255, 255, 255, 1);
+        color: $primary;
         transition: all 0.3s ease-in;
         @media (max-width: $md3+px) {
             padding: 5px 0 5px 0;
