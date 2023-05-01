@@ -2,10 +2,14 @@
     margin: 30px auto 30px auto;
     &__header{
     }
-}
-.introduction {
-	&__information { 
-        
+    &__descrpition{
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: $grey;
     }
 }
 .info-block__container { 
@@ -25,9 +29,6 @@
             margin-left: 0;
         }
     }
-}
-.info{
-
 }
 .img-container { 
     position:relative;
@@ -52,7 +53,8 @@
     @include adaptive-value('font-size', 16, 12, 0);
 }
 }
-.main-content{
+
+.features, .download, .faq, .contact-form{
     margin-bottom: 60px;
     @media (max-width: $md4+px){
         margin-left: 10px;
@@ -89,5 +91,22 @@
     }
     }
 
+}
+
+.features{
+    &__information
+    {display: block;}
+    .info-block{
+        display: none;
+    }
+    .info-block.active{
+        display: flex;
+    }
+    .info-block~.info-block{
+        margin-top: 0;
+        @media (max-width: $md4+px){
+            margin-top: 30px;
+        }
+    }
 }
 
